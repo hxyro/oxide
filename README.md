@@ -2,7 +2,10 @@
 <p align="center"><img align="left"  src="https://user-images.githubusercontent.com/67634565/135770396-bc4474c0-2a57-4e53-a076-f4ae3d2fb409.png" height='170px' >
 <img align="right"  src="https://user-images.githubusercontent.com/67634565/125792404-8feb3087-2884-42c8-9432-024879a9b3fc.gif" height='170px' ></p>
 
-# 
+&nbsp;
+
+&nbsp;
+
 
 <h1 align="center">stowthemer</h1>
 <h3 align="center">A quick script to manage <a href="https://github.com/umgbhalla/dotstow">dotstow</a></h3>
