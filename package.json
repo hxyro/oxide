@@ -1,6 +1,6 @@
 {
   "name": "stowthemer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "<p align=\"center\"><img align=\"center\"  src=\"https://user-images.githubusercontent.com/67634565/135770396-bc4474c0-2a57-4e53-a076-f4ae3d2fb409.png\" width='270px' ></p>",
   "main": "index.js",
   "scripts": {
