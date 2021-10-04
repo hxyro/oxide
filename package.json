@@ -1,0 +1,26 @@
+{
+  "name": "stowthemer",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img align=\"center\"  src=\"https://user-images.githubusercontent.com/67634565/135770396-bc4474c0-2a57-4e53-a076-f4ae3d2fb409.png\" width='270px' ></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umgbhalla/stowtheme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umgbhalla/stowtheme/issues"
+  },
+  "homepage": "https://github.com/umgbhalla/stowtheme#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "husky": "^7.0.0"
+  }
+}
