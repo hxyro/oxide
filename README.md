@@ -8,8 +8,7 @@
 
 ### Todo
 
-- [ ] CONTRIBUTING.md
-- [ ] init function
+- [x] CONTRIBUTING.md
 - [ ] yml/toml config generator/parser [res0](https://perfecto25.medium.com/handle-bash-config-file-variables-like-a-pro-957dc9a838ed)
  [res1](https://unix.stackexchange.com/questions/175648/use-config-file-for-my-shell-script) [res2](https://askubuntu.com/questions/743493/best-way-to-read-a-config-file-in-bash)
 - [ ]  menu for theme and subtheme selection system
@@ -23,6 +22,18 @@
 - [ ] support for more window manager
 - [ ] package for aur
 
+# Structure
+yml config  will contain 
+
+- entities (app's .config/\* folder name) paried with a prime number
+- themes name and prime product of its objects
+- inter theme breaking/compatibility analysis is done by product of entities in theme 
+- flags 
+	 - -a $@ , apply themes named in $@
+	 - -g , get current theme and prime configuration
+	 - -i , init function
+	 - -m , make current prime config into a theme 
+	 - -c , clear all symlinks \* risk
 
 
 
