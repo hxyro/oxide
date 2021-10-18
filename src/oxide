@@ -1,0 +1,36 @@
+#!/bin/bash
+
+Mvar="$( echo "Update Themes Exit" | tr ' ' '\n')"
+Tvar="$( echo "glass-green gruv-dark monterey moun-tain back" | tr ' ' '\n')"
+
+function UPDATE ()
+{
+    echo &> /dev/null
+}
+
+function CHANGE-THEME ()
+{
+    echo &> /dev/null
+}
+
+function SHOW-THEME ()
+{
+    while true
+    do
+        clear
+        echo -en "\n\n"
+        opt="$( echo "${Tvar}" | smenu -1 ^glass-green 2,ib -2 ^gruv-dark 8,ib -3 ^monterey 5,ib -4 ^moun-tain 0,ib -5 ^back 9,ib -l -U )"
+        [ -z "${opt}" ] || CHANGE-THEME ${opt}
+        [ "${opt}" == "back" ] && break
+    done
+}
+
+while true
+do
+    clear
+    echo -en "\n\n"
+    opt="$( echo "${Mvar}" | smenu -1 ^U 2,b -2 ^T 6,b -3 ^E 1,b -l -U )"
+    [ "${opt}" == "Update" ] && UPDATE ${opt} && continue
+    [ "${opt}" == "Themes" ] && SHOW-THEME ${opt} && continue
+    [ "${opt}" == "Exit" ] && clear; exit 0;
+done
