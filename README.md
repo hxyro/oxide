@@ -1,8 +1,8 @@
 
 <p align="center"><img align="center"  src="https://user-images.githubusercontent.com/67634565/135770396-bc4474c0-2a57-4e53-a076-f4ae3d2fb409.png" width='270px' ></p>
 
-<h1 align="center">stowthemer</h1>
-<h3 align="center">A quick script to manage <a href="https://github.com/umgbhalla/dotstow">dotstow</a></h3>
+<h1 align="center">Oxide</h1>
+<h3 align="center"> Manage <a href="https://github.com/umgbhalla/dotstow">dotstow</a></h3>
 
 #
 
