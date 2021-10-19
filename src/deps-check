@@ -1,0 +1,33 @@
+#!/bin/bash
+
+function ERROR ()
+{
+    echo -en "\e[31mError!!\e[0m command not found: ${1}\n"
+    exit
+}
+
+function WARN ()
+{
+    echo -en "\e[33mWarning!!\e[0m command not found: ${1}\n"
+}
+
+function DEPS-CHECK ()
+{
+    type bspwm &>/dev/null || ERROR "bspwm"
+    type sxhkd &>/dev/null || ERROR "sxhkd"
+    type polybar &>/dev/null || ERROR "polybar"
+    type picom &>/dev/null || ERROR "picom-jonaburg"
+    type rofi &>/dev/null || ERROR "rofi"
+    type feh &>/dev/null || ERROR "feh"
+    type firefox &>/dev/null || WARN "firefox"
+    type xava &>/dev/null || WARN "xava"
+    type i3lock &>/dev/null || WARN "i3lock-color"
+    type alacritty &>/dev/null || WARN "Alacritty"
+    type zsh &>/dev/null || ERROR "zsh"
+    type nvim &>/dev/null || WARN "neovim"
+    type dunst &>/dev/null || ERROR "dunst"
+    type tdrop &>/dev/null || ERROR "tdrop"
+    type paleofetch &>/dev/null || WARN "paleofetch"
+    type mpvc &>/dev/null || WARN "mpvc"
+    type hideIt.sh &>/dev/null || WARN "hideIt.sh"
+}

@@ -1,5 +1,6 @@
 #!/bin/bash
-
+source ./deps-check
+DEPS-CHECK
 Mvar="$( echo "Update Themes Exit" | tr ' ' '\n')"
 Tvar="$( echo "glass-green gruv-dark monterey moun-tain back" | tr ' ' '\n')"
 
@@ -32,5 +33,6 @@ do
     opt="$( echo "${Mvar}" | smenu -1 ^U 2,b -2 ^T 6,b -3 ^E 1,b -l -U )"
     [ "${opt}" == "Update" ] && UPDATE ${opt} && continue
     [ "${opt}" == "Themes" ] && SHOW-THEME ${opt} && continue
-    [ "${opt}" == "Exit" ] && clear; exit 0;
+    [ "${opt}" == "Exit" ] && clear; break;
 done
+DEPS-CHECK
