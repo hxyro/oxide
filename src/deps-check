@@ -25,6 +25,7 @@ function DEPS-CHECK ()
     type alacritty &>/dev/null || WARN "Alacritty"
     type zsh &>/dev/null || ERROR "zsh"
     type nvim &>/dev/null || WARN "neovim"
+    type mpv &>/dev/null || WARN "mpv"
     type dunst &>/dev/null || ERROR "dunst"
     type tdrop &>/dev/null || ERROR "tdrop"
     type paleofetch &>/dev/null || WARN "paleofetch"
